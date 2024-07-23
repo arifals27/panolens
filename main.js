@@ -5,11 +5,11 @@ const panoramaImage4 = new PANOLENS.ImagePanorama("images/4.jpg");
 const panoramaImage5 = new PANOLENS.ImagePanorama("images/5.jpg");
 const imageContainer = document.querySelector(".image-container");
 
-panoramaImage.link(panoramaImage2, new THREE.Vector3(200, 110, -1000));
-panoramaImage2.link(panoramaImage3, new THREE.Vector3(300, 220, -1000));
-panoramaImage3.link(panoramaImage4, new THREE.Vector3(300, 550, -1000));
-panoramaImage4.link(panoramaImage5, new THREE.Vector3(400, 660, -1000));
-panoramaImage5.link(panoramaImage, new THREE.Vector3(500, 880, -1000));
+panoramaImage.link(panoramaImage2, new THREE.Vector3(500, 910, -10000));
+panoramaImage2.link(panoramaImage3, new THREE.Vector3(300, 220, -5000));
+panoramaImage3.link(panoramaImage4, new THREE.Vector3(300, 550, 1000));
+panoramaImage4.link(panoramaImage5, new THREE.Vector3(400, 660, -5000));
+panoramaImage5.link(panoramaImage, new THREE.Vector3(500, 880, -2000));
 const viewer = new PANOLENS.Viewer({
   container: imageContainer,
 });
